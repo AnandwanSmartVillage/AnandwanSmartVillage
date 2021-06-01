@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/new_home" />
+
+
+    <item
+        android:id="@+id/journey"
+        android:title="@string/new_journey" />
+
+    <item
+        android:id="@+id/ourwork"
+        android:title="@string/new_our"/>
+
+
+
+
+    <item
+        android:id="@+id/products"
+        android:title="@string/new_products" />
+
+    <item
+        android:id="@+id/gallery"
+        android:title="@string/new_gallery" />
+
+    <item
+        android:id="@+id/volunteer"
+        android:title="@string/new_volunteer"/>
+
+    <item
+        android:id="@+id/articles"
+        android:title="@string/new_articles"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/ssc"
+        android:title="@string/new_ssc"/>
+
+    <item
+        android:id="@+id/visitus"
+        android:title="@string/new_visit"/>
+
+
+    <item
+        android:id="@+id/donate"
+        android:title="@string/new_donate"/>
+
+    <item
+        android:id="@+id/awards"
+        android:title="@string/new_award"/>
+
+    <item
+        android:id="@+id/contactus"
+        android:title="@string/new_cont"/>
+
+
+</menu>
+
+

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    tools:context=".ActivityVaform"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/drawerLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:itemHorizontalPadding="40dp"
+        app:itemTextAppearance="@style/TextViewStyle"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/app_bar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="55dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#bfbfbf">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="5sp"
+                    android:text="VOLUNTEER APPLICATION FORM"
+                    android:background="#ffb31a"
+                    android:paddingHorizontal="50sp"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@android:color/white"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <LinearLayout
+                    android:id="@+id/HLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/PInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Personal Info  >"
+                            android:textSize="15sp"
+                            android:textColor="#4d4d4d"
+                            android:textStyle="bold"
+                            android:layout_marginRight="20sp"/>
+
+
+
+                        <TextView
+                            android:id="@+id/MedCond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Medical Conditions  >"
+                            android:textSize="15sp"
+                            android:textColor="#4d4d4d"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/professional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Professional  >"
+                            android:textSize="15sp"
+                            android:textColor="#4d4d4d"
+                            android:textStyle="bold"
+                            android:layout_marginRight="20sp"/>
+
+                        <TextView
+                            android:id="@+id/Aio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Area of Interest  >"
+                            android:textSize="15sp"
+                            android:textColor="#4d4d4d"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="References"
+                            android:textSize="15sp"
+                            android:textColor="#4d4d4d"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="3dp"
+                        android:background="#8c8c8c"
+                        android:layout_marginVertical="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/YellowProgressBar1"
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="@android:color/transparent" />
+                        <View
+                            android:id="@+id/YellowProgressBar2"
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="@android:color/transparent" />
+                        <View
+                            android:id="@+id/YellowProgressBar3"
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="@android:color/transparent" />
+                        <View
+                            android:id="@+id/YellowProgressBar4"
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="@android:color/transparent" />
+                        <View
+                            android:id="@+id/YellowProgressBar5"
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="@android:color/transparent" />
+
+                    </LinearLayout>
+
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpagerVolForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:fillViewport="true">
+                    </androidx.viewpager.widget.ViewPager>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1.07"
+        android:id="@+id/botton_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

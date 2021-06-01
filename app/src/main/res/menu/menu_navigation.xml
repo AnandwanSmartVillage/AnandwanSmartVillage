@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/new_home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/places"
+        android:title="@string/new_place"
+        android:icon="@drawable/ic_place"/>
+    <item
+        android:id="@+id/navigate"
+        android:title="@string/new_nav"
+        android:icon="@drawable/ic_navigation"/>
+    <item
+        android:id="@+id/scanner"
+        android:title="@string/new_scan"
+        android:icon="@drawable/ic_scanner"/>
+
+
+</menu>

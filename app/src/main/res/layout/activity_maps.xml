@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/drawerLayout"
+    tools:context=".MapsActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:itemHorizontalPadding="40dp"
+        app:itemTextAppearance="@style/TextViewStyle"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/app_bar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/scrollView"
+                android:layout_alignTop="@+id/imageView2">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/nnn" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/new_cont"
+                    android:textSize="40dp"
+                    android:layout_marginTop="20dp"
+                    app:drawableTint="#060012"
+                    android:textColor="@color/black"
+                    app:fontFamily="sans-serif-black" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="3dp"
+                    android:background="@color/ba"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <fragment
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="15dp"
+                            tools:context=".MapsActivity">
+
+
+                            <ImageView
+                                android:id="@+id/expand"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="300dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/ic_baseline_zoom_out_map_24" />
+
+
+                        </fragment>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/anandwa"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:drawableTint="#05000E"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="@string/contact"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/email_id"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/pro"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="accounts@anandwan.in +919689344111"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="17dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/pro2"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="volunteer@anadwan.in"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="0dp"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/pro6"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="visitors@anandwan.in, +919011994626"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/pro3"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="smartvillage@anandwan.in"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="17dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/pro4"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/con"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/website"
+                    android:autoLink="all"
+                    android:layout_marginRight="25dp"
+                    android:id="@+id/link"
+                    android:textColor="@color/link"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/pro5"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="23dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/cont"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="15dp"/>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1.07"
+        android:id="@+id/botton_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

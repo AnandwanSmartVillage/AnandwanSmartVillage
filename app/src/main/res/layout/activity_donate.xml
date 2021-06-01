@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/drawerLayout"
+    tools:context=".ActivityDonate">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:itemHorizontalPadding="40dp"
+        app:itemTextAppearance="@style/TextViewStyle"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/app_bar"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scrollView"
+            android:layout_alignTop="@+id/imageView2"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/fp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/donates"
+                android:layout_marginTop="30dp"
+                android:textSize="40dp"
+                app:drawableTint="#060012"
+                android:textColor="@color/black"
+                app:fontFamily="sans-serif-black" />
+
+
+            <View
+                android:layout_width="130dp"
+                android:layout_gravity="center"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/orange"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/orange"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"
+                android:text="- Baba Amte"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/INDIANDONORS"
+
+                android:layout_marginTop="20dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:id="@+id/view1"
+                android:background="@color/orange"/>
+
+
+            <TextView
+                android:id="@+id/butt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:text="@string/USADONORS" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:id="@+id/view2"
+                android:background="@color/orange"/>
+
+
+
+            <TextView
+                android:id="@+id/butto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/black"
+
+                android:text="@string/OTHERCOUNTRIES" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:id="@+id/view3"
+                android:background="@color/orange"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/CHEQUEDEMANDDRAFT"
+                android:id="@+id/mytex"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="30dp"
+
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/indian"
+                android:id="@+id/mytext"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:text=""
+                android:textSize="17dp"
+                app:drawableTint="#060012"
+                android:textColor="@color/link"
+                app:fontFamily="sans-serif-black" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Secretary"
+                android:id="@+id/sec"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/address"
+
+                android:id="@+id/txt"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/NEFT"
+                android:id="@+id/myte"
+                android:paddingLeft="2dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/st"
+                android:id="@+id/myt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="7dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:text=""
+                android:textSize="16dp"
+                app:drawableTint="#060012"
+                android:textColor="@color/link"
+                app:fontFamily="sans-serif-black" />
+
+            <Button
+                android:id="@+id/fip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="next"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1.07"
+        android:id="@+id/botton_navigation"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
